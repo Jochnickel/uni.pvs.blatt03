@@ -1,0 +1,8 @@
+Aufgabe 1: HashMap vs Array
+2)
+HashMapArray hat den Nachteil im Gegensatz zum normalen Array, dass die Einträge dereferenziert werden müssen, was Laufzeit kostet.
+Auch sind bei einem Array die Werte an einem Stück im Speicher abgelegt, beim HashMapArray könnten sie verteilt sein, das könnte auch die Laufzeit negativ beeinflussen.
+
+3)
+Ein Vorteil einer HashMap gegenüber dem Array sind die unterschiedlichen verwendbaren Datentypen.
+Beispielsweise lässt sich wunderbar ein Telefonbuch o.ä. mit einer HashMap anlegen. Bei einem Array wäre der Aufwand zum Implementieren höher.

@@ -1,5 +1,10 @@
 package de.jj22.uni.pvs.blatt03;
 
+import java.util.HashMap;
+import java.util.Optional;
+
+import de.jj22.uni.pvs.blatt02.Pair;
+
 public class GradeOverview {
     private static HashMap<String, Pair<Double, Integer>> GRADEOVERVIEW;
     

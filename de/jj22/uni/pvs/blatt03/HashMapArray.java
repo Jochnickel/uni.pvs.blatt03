@@ -1,29 +1,33 @@
 package de.jj22.uni.pvs.blatt03;
 
 import java.util.HashMap;
-import java.util.Optional;
-
-import de.jj22.uni.pvs.blatt02.Pair;
 
 public class HashMapArray<V> {
-	final private HashMap<Integer, V> hMap = new HashMap<Integer, V>();
 
+	final private HashMap<Integer, V> hMap;
+	final private int length;
 
-	public void setEntry(int position){
-		if (getLength()<=position){
-			throw new IndexOutOfBoundsException();
-		}
+	public HashMapArray(int length) {
+		hMap = new HashMap<Integer, V>(length);
+		this.length = length;
 	}
 
-	public V getEntry(int position){
-		if (getLength()<=position){
+	public void setEntry(int position, V value) {
+		if (getLength() <= position || 0 > position) {
 			throw new IndexOutOfBoundsException();
 		}
-		return null;
+		hMap.put(position, value);
 	}
 
-	public int getLength(){
+	public V getEntry(int position) {
+		if (getLength() <= position || 0 > position) {
+			throw new IndexOutOfBoundsException();
+		}
+		return hMap.get(position);
+	}
 
+	public int getLength() {
+		return length;
 	}
 
 }

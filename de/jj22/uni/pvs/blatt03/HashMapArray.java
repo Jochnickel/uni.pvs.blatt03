@@ -5,21 +5,25 @@ import java.util.Optional;
 
 import de.jj22.uni.pvs.blatt02.Pair;
 
-public class HashMapArray {
-	private static HashMap<String, Pair<Double, Integer>> GRADEOVERVIEW;
-	
-	public Pair<Double, Integer> addTestResult(String lectureame, Pair<Double,Integer> gradeAndECTS){
+public class HashMapArray<V> {
+	final private HashMap<Integer, V> hMap = new HashMap<Integer, V>();
+
+
+	public void setEntry(int position){
+		if (getLength()<=position){
+			throw new IndexOutOfBoundsException();
+		}
+	}
+
+	public V getEntry(int position){
+		if (getLength()<=position){
+			throw new IndexOutOfBoundsException();
+		}
 		return null;
 	}
-	public void currentECTS(){
+
+	public int getLength(){
 
 	}
 
-	public Optional<Pair<Double,Integer>>getExamResults(){
-		return null;
-	}
-
-	public double totalGradeAverage(){
-		return 0;
-	}
 }

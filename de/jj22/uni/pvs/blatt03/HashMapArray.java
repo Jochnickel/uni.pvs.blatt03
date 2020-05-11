@@ -1,3 +1,5 @@
+package de.jj22.uni.pvs.blatt03;
+
 import java.util.HashMap;
 
 public class HashMapArray {
